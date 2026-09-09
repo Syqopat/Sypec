@@ -1,0 +1,26 @@
+settings:
+  teleport-back-on-disable: true
+  actionbar-reminder: true
+  actionbar-text: "&a&l[SYPEC] &7Izleyici modundasiniz! Cikmak icin: &e/sypec"
+
+sounds:
+  enable:
+    enabled: true
+    sound: ENTITY_ILLUSIONER_CAST_SPELL
+    volume: 1.0
+    pitch: 1.2
+  disable:
+    enabled: true
+    sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1.0
+    pitch: 0.8
+
+messages:
+  enabled: "&a&l[SYPEC] &7Izleyici moduna gectiniz!"
+  disabled: "&c&l[SYPEC] &7Izleyici modundan ciktiniz. Eski konumunuza donduruldunuz."
+  teleported-to: "&a&l[SYPEC] &e%target% &7adli oyuncu izleniyor!"
+  player-not-found: "&cOyuncu bulunamadi veya cevrimdisi!"
+  cannot-target-self: "&cKendinizi izleyemezsiniz!"
+  no-permission: "&cBu komutu kullanmak icin yetkiniz yok!"
+  reload: "&a[Sypec] Yapilandirma dosyasi basariyla yenilendi!"
+  only-players: "&cBu komut sadece oyuncular tarafindan kullanilabilir!"

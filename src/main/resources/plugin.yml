@@ -1,0 +1,17 @@
+name: Sypec
+version: 1.0.0
+main: com.example.sypec.Sypec
+api-version: '26.2'
+softdepend: [ProtocolLib]
+commands:
+  sypec:
+    description: Gizli izleyici moduna gecis yapar
+    aliases: [sypectate, silentspec]
+    permission: sypec.use
+permissions:
+  sypec.use:
+    default: op
+  sypec.see:
+    default: op
+  sypec.admin:
+    default: op
