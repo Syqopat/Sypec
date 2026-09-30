@@ -1,4 +1,4 @@
-package com.example.sypec.commands;
+﻿package com.example.sypec.commands;
 
 import com.example.sypec.Sypec;
 import com.example.sypec.managers.ConfigManager;

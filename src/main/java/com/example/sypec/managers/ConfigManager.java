@@ -1,4 +1,4 @@
-package com.example.sypec.managers;
+﻿package com.example.sypec.managers;
 
 import com.example.sypec.Sypec;
 import org.bukkit.ChatColor;

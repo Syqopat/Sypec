@@ -1,4 +1,4 @@
-package com.example.sypec.listeners;
+﻿package com.example.sypec.listeners;
 
 import com.example.sypec.Sypec;
 import org.bukkit.Bukkit;
@@ -61,16 +61,16 @@ public class SypecListener implements Listener {
     public void onInventoryClick(InventoryClickEvent event) {
         if (!(event.getWhoClicked() instanceof Player player)) return;
         
-        if (event.getView().getTitle().equals("§8Oyuncu Isinlanma Menusu")) {
+        if (event.getView().getTitle().equals("Â§8Oyuncu Isinlanma Menusu")) {
             event.setCancelled(true);
             if (event.getCurrentItem() != null && event.getCurrentItem().getType() == Material.PLAYER_HEAD) {
                 String targetName = event.getCurrentItem().getItemMeta().getDisplayName().substring(2);
                 Player target = Bukkit.getPlayerExact(targetName);
                 if (target != null && target.isOnline()) {
                     player.teleport(target.getLocation());
-                    player.sendMessage("§aIsinlanildi: §e" + target.getName());
+                    player.sendMessage("Â§aIsinlanildi: Â§e" + target.getName());
                 } else {
-                    player.sendMessage("§cOyuncu cevrimdisi.");
+                    player.sendMessage("Â§cOyuncu cevrimdisi.");
                 }
                 player.closeInventory();
             }
@@ -90,14 +90,14 @@ public class SypecListener implements Listener {
     }
     
     private void openTeleportMenu(Player player) {
-        Inventory inv = Bukkit.createInventory(null, 54, "§8Oyuncu Isinlanma Menusu");
+        Inventory inv = Bukkit.createInventory(null, 54, "Â§8Oyuncu Isinlanma Menusu");
         for (Player p : Bukkit.getOnlinePlayers()) {
             if (!p.equals(player)) {
                 ItemStack head = new ItemStack(Material.PLAYER_HEAD);
                 SkullMeta meta = (SkullMeta) head.getItemMeta();
                 if (meta != null) {
                     meta.setOwningPlayer(p);
-                    meta.setDisplayName("§a" + p.getName());
+                    meta.setDisplayName("Â§a" + p.getName());
                     head.setItemMeta(meta);
                 }
                 inv.addItem(head);

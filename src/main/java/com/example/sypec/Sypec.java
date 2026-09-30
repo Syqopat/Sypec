@@ -1,4 +1,4 @@
-package com.example.sypec;
+﻿package com.example.sypec;
 
 import com.example.sypec.commands.SypecCommand;
 import com.example.sypec.listeners.SypecListener;

@@ -1,4 +1,4 @@
-package com.example.sypec.managers;
+﻿package com.example.sypec.managers;
 
 import com.example.sypec.Sypec;
 import net.md_5.bungee.api.ChatMessageType;
@@ -34,7 +34,7 @@ public class SypecManager {
 
     public SypecManager(Sypec plugin) {
         this.plugin = plugin;
-        this.sypecBossBar = Bukkit.createBossBar("§c§l[SYPEC] §7Gizli Izleyici Modundasiniz", BarColor.RED, BarStyle.SOLID);
+        this.sypecBossBar = Bukkit.createBossBar("Â§cÂ§l[SYPEC] Â§7Gizli Izleyici Modundasiniz", BarColor.RED, BarStyle.SOLID);
         this.reminderTask = Bukkit.getScheduler().runTaskTimer(plugin, this::sendActionBarReminders, 20L, 20L);
     }
 
@@ -98,10 +98,10 @@ public class SypecManager {
     }
 
     private void giveSypecItems(Player player) {
-        player.getInventory().setItem(0, createItem(Material.COMPASS, "§aOyuncu Isinlanma Menusu"));
-        player.getInventory().setItem(4, createItem(Material.ENDER_PEARL, "§dRastgele Isinlanma"));
-        player.getInventory().setItem(7, createItem(Material.FEATHER, "§bUcus Hizi Ayari"));
-        player.getInventory().setItem(8, createItem(Material.RED_BED, "§cSypec Modundan Cik"));
+        player.getInventory().setItem(0, createItem(Material.COMPASS, "Â§aOyuncu Isinlanma Menusu"));
+        player.getInventory().setItem(4, createItem(Material.ENDER_PEARL, "Â§dRastgele Isinlanma"));
+        player.getInventory().setItem(7, createItem(Material.FEATHER, "Â§bUcus Hizi Ayari"));
+        player.getInventory().setItem(8, createItem(Material.RED_BED, "Â§cSypec Modundan Cik"));
     }
 
     private ItemStack createItem(Material mat, String name) {
@@ -163,12 +163,12 @@ public class SypecManager {
             }
         }
         if (targets.isEmpty()) {
-            player.sendMessage("§cIsinlanacak uygun oyuncu bulunamadi!");
+            player.sendMessage("Â§cIsinlanacak uygun oyuncu bulunamadi!");
             return;
         }
         Player target = targets.get(random.nextInt(targets.size()));
         player.teleport(target.getLocation());
-        player.sendMessage("§aRastgele isinlanildi: §e" + target.getName());
+        player.sendMessage("Â§aRastgele isinlanildi: Â§e" + target.getName());
     }
     
     public void cycleFlightSpeed(Player player) {
@@ -179,7 +179,7 @@ public class SypecManager {
         else if (speed < 0.8f) speed = 0.8f;
         else speed = 0.1f;
         player.setFlySpeed(speed);
-        player.sendMessage("§aUcus hizi guncellendi: §e" + (speed * 10));
+        player.sendMessage("Â§aUcus hizi guncellendi: Â§e" + (speed * 10));
     }
 
     public void handlePlayerQuit(Player quitter) {

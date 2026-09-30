@@ -1,4 +1,4 @@
-package com.example.sypec.hooks;
+﻿package com.example.sypec.hooks;
 
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.ProtocolLibrary;
