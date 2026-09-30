@@ -1,30 +1,30 @@
 # ⚙️ Sypec (Minecraft Spigot / Paper Protocol Plugin)
 
-![Status](https://img.shields.io/badge/Durum-%C3%87al%C4%B1%C5%9F%C4%B1yor%20%2F%20Working-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Working%20%2F%20Stable-brightgreen?style=for-the-badge)
 ![Java](https://img.shields.io/badge/Java-17%2B-orange?style=for-the-badge)
 ![Paper](https://img.shields.io/badge/Minecraft-1.20%2B-blue?style=for-the-badge)
 ![CI](https://img.shields.io/badge/CI%2FCD-Active-success?style=for-the-badge)
 
-**Sypec**, Minecraft Spigot ve Paper tabanlı sunucularda ağ paketlerini, protokol dinleyicilerini (ProtocolLib entegrasyonu) ve oyuncu bağlantılarını yönetmek üzere tasarlanmış sistem eklentisidir.
+**Sypec** is a network protocol utility plugin designed for Minecraft Spigot and Paper servers, integrating protocol packet listeners and event hooks.
 
 ---
 
-## 📌 Proje Durumu (Project Status)
+## 📌 Project Status
 
-- **Durum:** 🟢 **Çalışıyor (Working / Stable)**
-- **Test & CI/CD:** GitHub Actions Maven derleme hattı aktif.
-- **Konfigürasyon:** `config.yml` ile paket dinleyicileri ve filtreler yönetilir.
-
----
-
-## 🚀 Özellikler
-
-- **Protokol Dinleme:** Paket seviyesinde veri müdahalesi ve optimizasyon.
-- **Modüler Yönetim:** `SypecManager` ve `ConfigManager` ile esnek mimari.
+- **Status:** 🟢 **Working / Stable**
+- **CI/CD:** Automated GitHub Actions Maven build workflow enabled.
+- **Configuration:** Managed via `config.yml`.
 
 ---
 
-## 🛠️ Derleme ve Kurulum
+## 🚀 Key Features
+
+- **Protocol Listening:** Packet-level filtering and network inspection with ProtocolLib hooks.
+- **Modular Management:** Decoupled `SypecManager` and `ConfigManager` structure.
+
+---
+
+## 🛠️ Build & Installation
 
 ```bash
 mvn clean package
@@ -32,6 +32,6 @@ mvn clean package
 
 ---
 
-## 📄 Lisans
+## 📄 License
 
-MIT License
+Licensed under the MIT License.
